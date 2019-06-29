@@ -28,6 +28,7 @@ public class FlutterUmplusPlugin implements MethodCallHandler {
     channel.setMethodCallHandler(new FlutterUmplusPlugin(registrar.activity()));
   }
 
+
   @Override
   public void onMethodCall(MethodCall call, Result result) {
     if (call.method.equals("getPlatformVersion")) {
